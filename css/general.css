@@ -10,3 +10,7 @@ body {
 .background-grey h1, .background-grey h3{
     color: #f4f4f4;
 }
+
+footer{
+    min-height: 35vh;
+}
