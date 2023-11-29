@@ -3,3 +3,18 @@ body {
     background-color: #f4f4f4;
     font-family: 'Oswald', sans-serif;
 }
+
+p.quote{
+    position: relative;
+    text-indent: 20%;
+}
+
+p.quote:before{
+    content: '"';
+    font-size: 7rem;
+    font-style: italic;
+    font-family: 'Space Grotesk', sans-serif;
+    position: absolute;
+    top: -2.5rem;
+    left: -0.6rem;
+}
