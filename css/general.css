@@ -31,3 +31,7 @@ p.quote:before{
     width: 50%;
 }
 
+.github-icon:hover path, .github-icon:active path{
+    fill: #858585
+}
+
