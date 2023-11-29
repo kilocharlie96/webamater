@@ -9,6 +9,7 @@ p.quote{
     text-indent: 20%;
 }
 
+/* uvodzovky */
 p.quote:before{
     content: '"';
     font-size: 7rem;
@@ -19,18 +20,20 @@ p.quote:before{
     left: -0.6rem;
 }
 
+/* vlastny grid box pre obrazky */
 .krabicka{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.3rem;
 }
 
-.krabicka img:last-child{
+/* ak je pocet obrazkov neparny, posledny element bude na stred */
+.krabicka img:last-child:nth-child(odd){
     justify-self: center;
     grid-column: span 2;
     width: 50%;
 }
-
+/* github ikonka */
 .github-icon:hover path, .github-icon:active path{
     fill: #858585
 }
