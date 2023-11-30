@@ -10,7 +10,7 @@ p.quote{
     text-indent: 20%;
 }
 
-/* uvodzovky */
+/* uvodzovky pre citát */
 p.quote:before{
     content: '"';
     font-size: 7rem;
@@ -36,19 +36,21 @@ a:active, a:hover{
     gap: 0.3rem;
 }
 
-/* ak je pocet obrazkov neparny, posledny element bude na stred */
+/* ak je pocet obrazkov v gride neparny, posledny element bude na stred */
 .krabicka a:last-child:nth-child(odd){
     justify-self: center;
     grid-column: span 2;
     width: 50%;
 }
 
+/* hoverovanie nad obrazkom z gridu */
 div.krabicka > a.box:hover, div.krabicka > a.box:active {
     padding: 1.8rem;
     box-shadow: none;
     box-shadow: 0 0 0.3rem black;
 }
 
+/* odkaz na kontakt */
 svg.email{
     position: relative;
     top: 0.2rem;
@@ -59,10 +61,10 @@ a:hover > svg.email path, a:active > svg.email path{
   }
 
 /* github ikonka */
-.github-icon:hover path, .github-icon:active path{
-    fill: #858585
-}
-
 .github{
     padding-bottom: 1rem;
+}
+
+.github-icon:hover path, .github-icon:active path{
+    fill: #858585
 }
