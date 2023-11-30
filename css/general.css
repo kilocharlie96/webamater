@@ -29,7 +29,7 @@ a:active, a:hover{
     color: #EAB079;
 }
 
-a:hover > svg path, a:active > svg path{
+a:hover > svg.email path, a:active > svg.email path{
     stroke: #EAB079;
   }
 
@@ -60,4 +60,8 @@ svg.email{
 div.krabicka > a.box:hover, div.krabicka > a.box:active {
     padding: 1.65rem;
     box-shadow: 0 0 0.3rem black;
+}
+
+.github{
+    padding-bottom: 1rem;
 }
