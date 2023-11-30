@@ -29,7 +29,7 @@ a:active, a:hover{
     color: #EAB079;
 }
 
-a.email:hover svg.email path, a:active svg.email path{
+a:hover > svg path, a:active > svg path{
     stroke: #EAB079;
   }
 
@@ -47,9 +47,9 @@ a.email:hover svg.email path, a:active svg.email path{
     width: 50%;
 }
 
-svg.svg-email{
+svg.email{
     position: relative;
-    top: 0.1rem;
+    top: 0.2rem;
 }
 
 /* github ikonka */
