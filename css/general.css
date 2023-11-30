@@ -41,7 +41,7 @@ a:hover > svg path, a:active > svg path{
 }
 
 /* ak je pocet obrazkov neparny, posledny element bude na stred */
-.krabicka img:last-child:nth-child(odd){
+.krabicka a:last-child:nth-child(odd){
     justify-self: center;
     grid-column: span 2;
     width: 50%;
@@ -57,3 +57,7 @@ svg.email{
     fill: #858585
 }
 
+div.krabicka > a.box:hover, div.krabicka > a.box:active {
+    padding: 1.65rem;
+    box-shadow: 0 0 0.3rem black;
+}
