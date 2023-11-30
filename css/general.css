@@ -29,10 +29,6 @@ a:active, a:hover{
     color: #EAB079;
 }
 
-a:hover > svg.email path, a:active > svg.email path{
-    stroke: #EAB079;
-  }
-
 /* vlastny grid box pre obrazky */
 .krabicka{
     display: grid;
@@ -47,20 +43,24 @@ a:hover > svg.email path, a:active > svg.email path{
     width: 50%;
 }
 
+div.krabicka > a.box:hover, div.krabicka > a.box:active {
+    padding: 1.8rem;
+    box-shadow: none;
+    box-shadow: 0 0 0.3rem black;
+}
+
 svg.email{
     position: relative;
     top: 0.2rem;
 }
 
+a:hover > svg.email path, a:active > svg.email path{
+    stroke: #EAB079;
+  }
+
 /* github ikonka */
 .github-icon:hover path, .github-icon:active path{
     fill: #858585
-}
-
-div.krabicka > a.box:hover, div.krabicka > a.box:active {
-    padding: 1.8rem;
-    box-shadow: none;
-    box-shadow: 0 0 0.3rem black;
 }
 
 .github{
