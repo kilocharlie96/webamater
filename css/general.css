@@ -58,7 +58,8 @@ svg.email{
 }
 
 div.krabicka > a.box:hover, div.krabicka > a.box:active {
-    padding: 2rem;
+    padding: 1.8rem;
+    box-shadow: none;
     box-shadow: 0 0 0.3rem black;
 }
 
