@@ -4,6 +4,7 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+/* citát */
 p.quote{
     position: relative;
     text-indent: 20%;
@@ -20,6 +21,18 @@ p.quote:before{
     left: -0.6rem;
 }
 
+a{
+    color: #B37B55;
+}
+
+a:active, a:hover{
+    color: #EAB079;
+}
+
+a.email:hover svg.email path, a:active svg.email path{
+    stroke: #EAB079;
+  }
+
 /* vlastny grid box pre obrazky */
 .krabicka{
     display: grid;
@@ -33,6 +46,12 @@ p.quote:before{
     grid-column: span 2;
     width: 50%;
 }
+
+svg.svg-email{
+    position: relative;
+    top: 0.1rem;
+}
+
 /* github ikonka */
 .github-icon:hover path, .github-icon:active path{
     fill: #858585
