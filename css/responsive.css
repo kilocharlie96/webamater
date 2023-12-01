@@ -1,13 +1,14 @@
+/* mobile wider */
 @media (min-width: 600px) {
     body{
-        padding: 0 5vw;
+        padding: 0 7vw;
     }
   }
 
 /* tablet */
 @media (min-width: 769px) {
     body{
-        padding: 0 20vw;
+        padding: 0 15vw;
     }
   }
 
