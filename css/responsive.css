@@ -1,0 +1,19 @@
+@media (min-width: 600px) {
+    body{
+        padding: 0 5vw;
+    }
+  }
+
+/* tablet */
+@media (min-width: 769px) {
+    body{
+        padding: 0 20vw;
+    }
+  }
+
+  /* desktop */
+  @media (min-width: 1024px) {
+    body{
+        padding: 0 25vw;
+    }
+  }
