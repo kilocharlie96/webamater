@@ -68,3 +68,7 @@ a:hover > svg.email path, a:active > svg.email path{
 .github-icon:hover path, .github-icon:active path{
     fill: #858585
 }
+
+p.cookies{
+    font-size: 0.5rem;
+}
