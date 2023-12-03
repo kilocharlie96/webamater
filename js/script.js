@@ -4,6 +4,6 @@ var pageWidth = $('body').width(),
     content = $('.content');
 
     h1.hide().fadeIn(2000);
-    h2.hide().fadeIn(3000);
-    content.hide().fadeIn(3500);
+    h2.hide().fadeIn(4500);
+    content.hide().fadeIn(3000);
 
