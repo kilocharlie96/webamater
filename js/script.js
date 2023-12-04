@@ -9,8 +9,9 @@ var pageWidth = $('body').width(),
     content.hide().fadeIn(3000);
 
     // schova p.warning po kliknuti na agree element
+    // todo dohladat ako schovať element už počas presuvania
         agree.on( "click", function() {
         $('.warning').animate({
             left: pageWidth
-        }, 1500).fadeOut();
+        }, 1000).fadeOut();
       } );
