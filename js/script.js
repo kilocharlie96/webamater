@@ -2,8 +2,8 @@ var pageWidth = $('body').width(),
     h1 = $('header h1'),
     h2 = $('header h4'),
     content = $('main'),
-    agreeButton = $('.agree'),
-    warningButton = $('.warning')
+    agreeButton = $('button.button'),
+    warningBanner = $('.warning')
 
     h1.hide().fadeIn(2000);
     h2.hide().fadeIn(4500);
@@ -12,7 +12,7 @@ var pageWidth = $('body').width(),
     // schova warning banner po kliknuti na agree
     // todo dohladat ako schovať element už počas presuvania
         agreeButton.on( "click", function() {
-        $('.warning').animate({
+        warningBanner.animate({
             left: pageWidth/2,
             opacity: 0
         }, 1000).fadeOut();
