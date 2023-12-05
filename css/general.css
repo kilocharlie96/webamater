@@ -4,6 +4,10 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+header h1.title{
+    line-height: 4rem;
+}
+
 button.button {
     color: hsl(0, 0%, 86%);
     padding: 0.6rem;
