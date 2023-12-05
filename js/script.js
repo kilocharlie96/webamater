@@ -1,7 +1,7 @@
 var pageWidth = $('body').width(),
     h1 = $('header h1'),
     h2 = $('header h4'),
-    content = $('.content'),
+    content = $('main'),
     agreeButton = $('.agree'),
     warningButton = $('.warning')
 
