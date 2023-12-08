@@ -84,16 +84,8 @@ a:hover > svg.email path, a:active > svg.email path{
     stroke: #d20d0d;
   }
 
-  div.pre-footer{
-    gap: 4rem;
-  }
-
   .pre-footer a:active, .pre-footer a:hover{
     color: #d20d0d;
-}
-
-p.thank-you{
-    padding: 1.5rem 3.5rem;
 }
 
 /* github ikonka */
