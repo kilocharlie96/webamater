@@ -92,6 +92,10 @@ a:hover > svg.email path, a:active > svg.email path{
     color: #d20d0d;
 }
 
+p.thank-you{
+    padding: 1.5rem 3.5rem;
+}
+
 /* github ikonka */
 .github{
     padding-bottom: 1rem;

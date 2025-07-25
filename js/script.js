@@ -5,9 +5,9 @@ var pageWidth = $('body').width(),
     agreeButton = $('button.button'),
     warningBanner = $('.warning')
 
-    h1.hide().fadeIn(2000);
-    h2.hide().fadeIn(4500);
-    content.hide().fadeIn(3000);
+    h1.hide().fadeIn(1000);
+    h2.hide().fadeIn(3500);
+    content.hide().fadeIn(2000);
 
     // schova warning banner po kliknuti na agree
     // todo dohladat ako schovať element už počas presuvania
