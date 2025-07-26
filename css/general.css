@@ -4,8 +4,28 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+@keyframes pohybHoreDole {
+    0%   { top: 55%; }
+    50%  { top: 60%; }
+    100% { top: 55%; }
+    }
+
+header div {
+    position: relative;
+
+    animation: pohybHoreDole 0.9s ease-in-out infinite;
+}
+
+header {
+    height: 100vh;
+}
+
 header h1.title{
     line-height: 4rem;
+}
+
+.welcome {
+    height: 100vh;
 }
 
 button.button {
