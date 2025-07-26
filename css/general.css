@@ -1,11 +1,35 @@
+@keyframes pohybHoreDole {
+    0%   { top: 55%; }
+    50%  { top: 60%; }
+    100% { top: 55%; }
+    }
+
 body {
     min-height: 100vh;
     background-color: #f4f4f4;
     font-family: 'Oswald', sans-serif;
 }
 
+header {
+    height: 100vh;
+}
+
+header div {
+    position: relative;
+
+    animation: pohybHoreDole 0.9s ease-in-out infinite;
+}
+
 header h1.title{
     line-height: 4rem;
+}
+
+#arrow {
+    width: 30%;
+}
+
+.welcome {
+    height: 100vh;
 }
 
 button.button {
