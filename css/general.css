@@ -1,4 +1,5 @@
-@keyframes pohybHoreDole {
+/* arrow animation values */
+@keyframes arrowMovement {
     0%   { top: 40%; }
     50%  { top: 45%; }
     100% { top: 40%; }
@@ -10,40 +11,43 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+/* header */
 header {
     height: 100vh;
-}
-
-header div {
-    position: relative;
-
-    animation: pohybHoreDole 0.9s ease-in-out infinite;
 }
 
 header h1.title{
     line-height: 4rem;
 }
 
+/* arrow */
+header div {
+    position: relative;
+    animation: arrowMovement 0.9s ease-in-out infinite;
+}
+
 #arrow {
     width: 30%;
 }
 
+/* main */
 .welcome {
     height: 100vh;
 }
 
+/* overrided Bulma button */
 button.button {
     color: hsl(0, 0%, 86%);
     padding: 0.7rem;
     font-size: 0.7rem;
     font-weight: 700;
     border-radius: 1rem;
-    box-shadow: 3px 3px 5px gray;
+    box-shadow: 0.025rem 0.025rem 0.1rem gray;
     border: none;
 }
 
 button.button:hover, button.button:active{
-    box-shadow: 3px 3px 10px black;
+    box-shadow: 0.025rem 0.025rem 0.25rem black;
     color: hsl(0, 0%, 96%);
 }
 
@@ -52,13 +56,13 @@ strong small.is-small{
     font-size: 0.9rem;
 }
 
-/* citát */
+/* qutote */
 p.quote{
     position: relative;
     text-indent: 20%;
 }
 
-/* uvodzovky pre citát */
+/* quotation mark */
 p.quote:before{
     content: '"';
     font-size: 7rem;
@@ -69,6 +73,7 @@ p.quote:before{
     left: -0.6rem;
 }
 
+/* links */
 a{
     color: #B37B55;
 }
@@ -77,28 +82,28 @@ a:active, a:hover{
     color: #EAB079;
 }
 
-/* vlastny grid box pre obrazky */
+/* gridbox for tech-stack */
 .krabicka{
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.3rem;
 }
 
-/* ak je pocet obrazkov v gride neparny, posledny element bude na stred */
+/* in case of odd number of elements, last child will be centered */
 .krabicka a:last-child:nth-child(odd){
     justify-self: center;
     grid-column: span 2;
     width: 50%;
 }
 
-/* hoverovanie nad obrazkom z gridu */
+/* hovering over tech-stack element (picture) */
 div.krabicka > a.box:hover, div.krabicka > a.box:active {
     padding: 1.8rem;
     box-shadow: none;
     box-shadow: 0 0 0.3rem black;
 }
 
-/* odkaz na kontakt */
+/* redirection to e-mail */
 svg.email{
     position: relative;
     top: 0.2rem;
@@ -108,6 +113,7 @@ a:hover > svg.email path, a:active > svg.email path{
     stroke: #d20d0d;
   }
 
+  /* pre-footer */
   div.pre-footer{
     gap: 4rem;
   }
@@ -120,7 +126,7 @@ p.thank-you{
     padding: 1.5rem 3.5rem;
 }
 
-/* github ikonka */
+/* footer */
 .github{
     padding-bottom: 1rem;
 }
@@ -134,6 +140,8 @@ p.cookies{
     background-image: linear-gradient(#fafafa, hsl(0, 0%, 71%));
     text-shadow: 0px 0px 10px hsl(0, 0%, 71%);
 }
+
+/* copyright */
 
 /* em.copyright {
     font-size: 1.15rem;
