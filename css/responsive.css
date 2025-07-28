@@ -1,38 +1,33 @@
 /* mobile wider */
 @media (min-width: 600px) and (max-width: 768) {
-    body{
-        padding: 0 7vw;
-    }
-
-    /* .warning {
-      display: none;
-    } */
+  body{
+    padding: 0 7vw;
   }
+}
 
 /* tablet */
 @media (min-width: 769px) and (max-width: 1023px) {
-    body{
-        padding: 0 20vw;
-    }
-    
-
-    p.citat{
-      padding: 0rem;
-    }
+  body{
+      padding: 0 20vw;
   }
 
-  /* desktop */
-  @media (min-width: 1024px) {
-    body{
-        padding: 0 15vw;
-    }
-
-    #arrow {
-    max-width: 10%;
+  p.citat{
+    padding: 0rem;
+  }
 }
-    
-    .section{
-      margin-right: 8rem;
-      margin-left: 8rem;
-    }
+
+  /* desktop */
+@media (min-width: 1024px) {
+  body{
+      padding: 0 15vw;
+  }
+
+  #arrow {
+  max-width: 10%;
+}
+  
+  .section{
+    margin-right: 8rem;
+    margin-left: 8rem;
+  }
   }
