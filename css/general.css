@@ -21,7 +21,7 @@ header h1.title{
 }
 
 /* arrow */
-div img.arrow {
+div.arrow-box {
     position: relative;
     animation: arrowMovement 0.9s ease-in-out infinite;
 }
