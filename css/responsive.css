@@ -16,11 +16,6 @@
   }
 }
 
-  .section {
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-
   .post-section {
     display: grid;
     place-items: center;
@@ -36,7 +31,7 @@
       padding: 0 15vw;
   }
 
-  #arrow {
+  .arrow {
   max-width: 10%;
 }
   
