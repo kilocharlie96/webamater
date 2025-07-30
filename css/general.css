@@ -30,7 +30,6 @@ div.arrow-box {
     width: 30%;
 }
 
-/* main */
 /* overrided Bulma button */
 button.button {
     color: hsl(0, 0%, 86%);

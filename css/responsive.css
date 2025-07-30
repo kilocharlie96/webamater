@@ -16,11 +16,6 @@
   }
 }
 
-  .section {
-    margin-right: 8rem;
-    margin-left: 8rem;
-  }
-
   .post-section {
     display: grid;
     place-items: center;
