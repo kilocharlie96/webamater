@@ -15,5 +15,5 @@ var pageWidth = $('body').width(),
         warningBanner.animate({
             left: pageWidth/2,
             opacity: 0
-        }, 1000).fadeOut();
+        }, 500).fadeOut();
       } );
