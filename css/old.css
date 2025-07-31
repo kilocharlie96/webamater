@@ -1,0 +1,148 @@
+/* arrow animation values */
+@keyframes arrowMovement {
+    0%   { top: 40%; }
+    50%  { top: 45%; }
+    100% { top: 40%; }
+    }
+
+body {
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* header */
+header {
+    height: 100vh;
+}
+
+header h1.title{
+    line-height: 4rem;
+}
+
+/* arrow */
+div.arrow-box {
+    position: relative;
+    animation: arrowMovement 0.9s ease-in-out infinite;
+}
+
+.arrow {
+    width: 30%;
+}
+
+/* button */
+button {
+    color: hsl(0, 0%, 86%);
+    padding: 0.7rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 1rem;
+    box-shadow: 0.025rem 0.025rem 0.1rem gray;
+    border: none;
+}
+
+button.button:hover, button.button:active{
+    box-shadow: 0.025rem 0.025rem 0.25rem black;
+    color: hsl(0, 0%, 96%);
+}
+
+strong small.is-small{
+    font-weight: normal;
+    font-size: 0.9rem;
+}
+
+/* qutote */
+p.quote{
+    position: relative;
+    text-indent: 20%;
+}
+
+/* quotation mark */
+p.quote:before{
+    content: '"';
+    font-size: 7rem;
+    font-style: italic;
+    font-family: 'Space Grotesk', sans-serif;
+    position: absolute;
+    top: -2.5rem;
+    left: -0.6rem;
+}
+
+/* links */
+a{
+    color: #B37B55;
+}
+
+a:active, a:hover{
+    color: #EAB079;
+}
+
+/* gridbox for tech-stack */
+.krabicka{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.3rem;
+}
+
+/* in case of odd number of elements, last child will be centered */
+.krabicka a:last-child:nth-child(odd){
+    justify-self: center;
+    grid-column: span 2;
+    width: 50%;
+}
+
+/* hovering over tech-stack element (picture) */
+div.krabicka > a.box:hover, div.krabicka > a.box:active {
+    padding: 1.8rem;
+    box-shadow: none;
+    box-shadow: 0 0 0.3rem black;
+}
+
+/* redirection to e-mail */
+svg.email{
+    position: relative;
+    top: 0.2rem;
+}
+
+a:hover > svg.email path, a:active > svg.email path{
+    stroke: #d20d0d;
+  }
+
+  /* pre-footer */
+  div.pre-footer{
+    gap: 4rem;
+  }
+
+  .pre-footer a:active, .pre-footer a:hover{
+    color: #d20d0d;
+}
+
+p.thank-you{
+    padding: 1.5rem 3.5rem;
+}
+
+/* footer */
+.github{
+    padding-bottom: 1rem;
+}
+
+.github-icon:hover path, .github-icon:active path{
+    fill: #858585
+}
+
+p.cookies{
+    font-size: 0.65rem;
+    background-image: linear-gradient(#fafafa, hsl(0, 0%, 71%));
+    text-shadow: 0px 0px 10px hsl(0, 0%, 71%);
+}
+
+/* copyright */
+
+/* em.copyright {
+    font-size: 1.15rem;
+} */
+
+span.years {
+    display: block;
+    /* font-size: 0.9rem; */
+}
