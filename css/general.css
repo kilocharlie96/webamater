@@ -30,8 +30,8 @@ div.arrow-box {
     width: 30%;
 }
 
-/* overrided Bulma button */
-button.button {
+/* button */
+button {
     color: hsl(0, 0%, 86%);
     padding: 0.7rem;
     font-size: 0.7rem;
