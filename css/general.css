@@ -21,3 +21,12 @@ h1 {
     padding-top: 1rem;
 }
 
+img.arrow {
+    position: relative;
+    left: -35px;
+    top: -59px;
+}
+
+.welcome {
+    min-height: 100vh;
+}
