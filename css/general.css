@@ -1,16 +1,19 @@
 /* min-width: 320px */
 
+/* variables */
 :root {
     --color-bg-body: oklch(0.9672 0 129.63);
     --color-bg-header: oklch(0.3311 0 0);
 }
 
+/* body */
 body {
     min-height: 100vh;
     background-color: var(--color-bg);
     font-family: 'Oswald', sans-serif;
 }
 
+/* header */
 header {
     min-height: 100vh;
     background-color: var(--color-bg-header);
@@ -27,6 +30,7 @@ img.arrow {
     top: -59px;
 }
 
+/* welcome section */
 .welcome {
     min-height: 100vh;
 }
