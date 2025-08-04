@@ -124,6 +124,7 @@ p.thank-you{
 /* footer */
 .github{
     padding-bottom: 1rem;
+    margin-top: 2.5rem;
 }
 
 .github-icon:hover path, .github-icon:active path{
