@@ -1,170 +1,49 @@
 <!DOCTYPE html>
 <html lang="sk">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💻 Kristián Černák - WebAmatér</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>💻 Kristián Černák - WebAmatér</title>
 
-    <link rel="stylesheet" href="css/modern-normalize.css">
-    <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/modern-normalize.css">
+        <link rel="stylesheet" href="css/general.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
 
-</head>
+        <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.js" 
+                integrity="sha384-ksKjJrwjL5VxqAkAZAVOPXvMkwAykMaNYegdixAESVr+KqLkKE8XBDoZuwyWVUDv" 
+                crossorigin="anonymous">
+        </script>
 
-<body>
-    <header>
-        <h1>KRISTIÁN ČERNÁK</h1>
-        <h4>Začínajúci web developer so zameraním na HTML, HTMX, JavaScript a Javu.</h4>
-        <div class="arrow-box">
-            <img class="arrow" src="images/svg/arrow-down-svgrepo-com.svg" alt="arrow">
-        </div>
-    </header>
+    </head>
 
-    <main>
-        <div class="welcome">
-            <h3 class="">Vitaj na mojej stránke</h3>
+    <body>
+        <header hx-get="particles/header.html" hx-trigger="load"></header>
 
-            <p class="warning">
-                <strong>Pozor!</strong>
-                Na stránke sa stále pracuje. 
-                Uživateľské rozhranie je dizajnované spôsobom "Mobile First". Desktop verzia bude priebežne dolaďovaná.
-                <button>Rozumiem!</button>
-            </p>
-
-            <p>Táto stránka má byť niečo ako motivačný list a zároveň prezentácia mojich skills v praxi.</p>
-            <p><strong>Žiaden WordPress.<br>Iba ja, HTML, CSS a ChatGPT.<small><br>( pokus o vtip )</small></strong></p>
+        <main>
+            <div class="welcome" hx-get="particles/welcome.html" hx-trigger="load"></div>
             
-            <p>Krátka story..</p>
-            <p class="citat">K programovaniu som sa dostal vďaka bratovi, ktorý mi odporučil knihu "Java bez predchádzajúcich skúseností". Prvú príležitosť podieľať sa na vývoji aplikácií som získal v agilnom tíme, ktorý vyvíjal SCRUM metodikou MS PowerApps aplikácie. Neskôr som sa podieľal na tvorbe e-shopu, s viac ako 5 000 produktami, postavenom na platforme Shopify. Mám ale rád veci pod kontrolou, preto chcem písať vlastný a čitateľný kód. Momentálne som samouk, ktorý si popri zamestnaní rozširuje svoje vedomosti pomocou online kurzov. Vďaka Ti, <a href="http://webrebel.sk/" target="_blank" rel="noopener" title="webrebel.sk">Yablko</a> a <a href="https://skillmea.sk/kanaly/jaroslav-beno/o-nas" target="_blank" rel="noopener" title="jaroslavbeno.sk">Jaro Beňo</a>.
-            </p>
+            <section hx-get="particles/used-techstack.html" hx-trigger="load"></section>
 
-             <!-- <div class="is-size-1"><img class="arrow" src="images/svg/arrow-down-svgrepo-com.svg" alt="arrow"></div> -->
-        </div>
-        
-        <section>
-            <h4>Čo bolo použité pri tvorbe tejto stránky?</h4>
+            <section hx-get="particles/other-techstack.html" hx-trigger="load"></section>
 
-            <div>
-                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank" rel="noopener" title="html website">
-                    <img src="images/html.png" alt="html icon">
-                </a>
+            <section hx-get="particles/after-section.html" hx-trigger="load"></section>
+        </main>
 
-                <a href="https://htmx.org/" target="_blank" rel="noopener" title="htmx website">
-                    <img src="images/htmx.png" alt="htmx icon">
-                </a>
+        <div class="pre-footer" hx-get="particles/pre-footer.html" hx-trigger="load"></div>
 
-                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" rel="noopener" title="css website">
-                    <img src="images/css.png" alt="css icon">
-                </a>
-                
-                <a href="https://moderncss.dev" target="_blank" rel="noopener" title="modern css website">
-                    <img src="images/modern_css.png" alt="modern css icon">
-                </a>
+        <footer hx-get="particles/footer.html" hx-trigger="load"></footer>
 
-                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noopener" title="js es6 website">
-                    <img src="images/js_es6.png" alt="js es6 icon">
-                </a>
+        <p class="cookies">Táto stránka používa len nevyhnutné cookies, potrebné na zabezpečenie jej správneho fungovania.</p>
 
-                <!-- <a href="https://bulma.io/" target="_blank" rel="noopener" title="bulma website">
-                    <img src="images/bulma.png" alt="bulma icon">
-                </a> -->
+        <!-- scripts -->
+        <script src="js/jquery-3.7.1.js"></script>
+        <script src="js/script.js"></script>
 
-                <!-- <a href="https://jquery.com" target="_blank" rel="noopener" title="jquery website">
-                    <img src="images/jqeury.png" alt="jquery icon">
-                </a> -->
-
-                <a href="https://git-scm.com/" target="_blank" rel="noopener" title="git website">
-                    <img src="images/git.png" alt="git icon">
-                </a>
-                
-                <!-- <a href="https://code.visualstudio.com/" target="_blank" rel="noopener" title="vscode website">
-                    <img src="images/vscode.png" alt="vscode icon">
-                </a> -->
-            </div>
-        </section>
-
-        <section>
-            <h4>Aké ďalšie technológie používam?</h4>
-
-            <div>
-                <a href="https://www.java.com/" target="_blank" rel="noopener" title="java website">
-                    <img src="images/java.png" alt="java icon">
-                </a>
-
-                <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener" title="spring website">
-                    <img src="images/springboot.png" alt="spring icon">
-                </a> 
-
-                <a href="https://maven.apache.org/" target="_blank" rel="noopener" title="maven website">
-                    <img src="images/maven.png" alt="maven icon">
-                </a>   
-                
-                <a href="https://www.w3schools.com/sql/sql_intro.asp" target="_blank" rel="noopener" title="sql website">
-                    <img src="images/sql.png" alt="sql icon">
-                </a>
-            </div>
-        </section>
-
-        <section class="post-section">
-            <p>
-                <strong>Všetko ale pekne postupne.</strong><br>Niektoré z vyššie spomenutých technológií som mal možnosť vyskúšať. Nedovolím si ale tvrdiť, že ich plne ovládam. Plánujem si však neustále rozširovať vedomosti. Tie sa budem snažiť odzrkadliť na tejto stránke a ďalších <small>(zatiaľ?)</small> menších projektoch. Takisto budem postupne pridávať portfólio ďalších projektov. Mrkni na <a href="https://github.com/kilocharlie96/webamater" target="_blank" rel="noopener" title="Prejsť na GitHub">GitHub</a> a prezri si históriu vývoja aj so "zdrojákom", alebo ďalšie projekty.
-            </p>
-        </section>
-    
-
-
-    <div class="pre-footer">
-        <p class="thank-you">Keďže si sa dostal/a až sem, môj výtvor Ťa zrejme aspoň trochu zaujal a ja mám aspoň trochu menej pocit, že spolu s touto stránkou patríme do koša. Ďakujem a vážim si Tvoju návštevu ❤️.</p>
-        <p>Ak Ťa môj príbeh naozaj zaujal a myslíš, že máš pre mňa vhodný job,
-            <a class="email" href="mailto:cernak.kiko@gmail.com" title="Odoslať e-mail">napíš mi 
-                <svg class="email" width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier">
-                        <path d="M3.02832 10L10.2246 14.8166C10.8661 15.2443 11.1869 15.4581 11.5336 15.5412C11.8399 15.6146 12.1593 15.6146 12.4657 15.5412C12.8124 15.4581 13.1332 15.2443 13.7747 14.8166L20.971 10M10.2981 4.06879L4.49814 7.71127C3.95121 8.05474 3.67775 8.22648 3.4794 8.45864C3.30385 8.66412 3.17176 8.90305 3.09111 9.161C3 9.45244 3 9.77535 3 10.4212V16.8C3 17.9201 3 18.4802 3.21799 18.908C3.40973 19.2843 3.71569 19.5903 4.09202 19.782C4.51984 20 5.07989 20 6.2 20H17.8C18.9201 20 19.4802 20 19.908 19.782C20.2843 19.5903 20.5903 19.2843 20.782 18.908C21 18.4802 21 17.9201 21 16.8V10.4212C21 9.77535 21 9.45244 20.9089 9.161C20.8282 8.90305 20.6962 8.66412 20.5206 8.45864C20.3223 8.22648 20.0488 8.05474 19.5019 7.71127L13.7019 4.06879C13.0846 3.68116 12.776 3.48735 12.4449 3.4118C12.152 3.34499 11.848 3.34499 11.5551 3.4118C11.224 3.48735 10.9154 3.68116 10.2981 4.06879Z" stroke="#B37B55" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-                        </path>
-                    </g>
-                </svg>.
-            </a><br>Budem rád.
-        </p>
-
-        <!-- todo mozno pouzit bodky na vyplnenie medzery -->
-        <p>..naozaj rád 🙂</p>
-    </div>
-
-</main>
-
-    <footer>
-        <div class="github">
-            <a href="https://github.com/kilocharlie96" target="_blank" rel="noopener" title="Prejsť na Github">
-                <svg class="github-icon" width="42px" height="42px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"> <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" fill="#000000"> <g id="icons" transform="translate(56.000000, 160.000000)"> 
-                        <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]">
-                        </path>
-                    </g></g></g></g>
-                </svg>
-            </a>
-        </div>
-
-        <p>
-            <em class="copyright">©kilocharlie96 
-                <span class="years">2024 - 2025</span>
-            </em>
-        </p>
-    </footer>
-
-    <p class="cookies">Táto stránka používa len nevyhnutné cookies, potrebné na zabezpečenie jej správneho fungovania.</p>
-
-    <!-- scripts -->
-    <script src="js/jquery-3.7.1.js"></script>
-    <script src="js/script.js"></script>
-    <script>
-
-    </script>
-
-</body>
+    </body>
 </html>
