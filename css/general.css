@@ -1,16 +1,35 @@
 /* min-width: 320px */
 
+/* arrow animation values */
+@keyframes arrowMovement {
+    0%   { top: 40%; }
+    50%  { top: 45%; }
+    100% { top: 40%; }
+    }
+
 /* variables */
 :root {
     --color-bg-body: oklch(0.9672 0 129.63);
     --color-bg-header: oklch(0.3311 0 0);
 }
 
+.is-flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* body */
 body {
     min-height: 100vh;
-    background-color: var(--color-bg);
+
+    background-color: var(--color-bg-body);
+
     font-family: 'Oswald', sans-serif;
+}
+
+.app {
+    width: min(50em, 50%);
 }
 
 /* header */
@@ -21,13 +40,12 @@ header {
 
 h1 {
     margin-top: 0;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
-img.arrow {
+.arrow {
     position: relative;
-    left: -35px;
-    top: -59px;
+    animation: arrowMovement 0.9s ease-in-out infinite;
 }
 
 /* welcome section */
