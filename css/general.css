@@ -14,7 +14,7 @@
     --color-font-header: whitesmoke;
 }
 
-.is-flex, section {
+.is-flex {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -40,15 +40,7 @@ body {
     height: 10vh;
 }
 
-/* welcome section */
-.welcome {
-    min-height: 100vh;
+a {
+    margin: 2vw;
 }
 
-main {
-    max-width: 1000px;
-}
-
-.is-grid {
-    display: grid;
-}

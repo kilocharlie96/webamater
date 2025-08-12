@@ -11,7 +11,7 @@ h1 {
     padding-top: clamp(12rem, 10vw, 20rem);
 }
 
-h4 {
+h2 {
     font-size: clamp(0.057rem, 2vw, 3rem);
     font-weight: bolder;
 }
