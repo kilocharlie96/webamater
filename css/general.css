@@ -11,6 +11,7 @@
 :root {
     --color-bg-body: oklch(0.9672 0 129.63);
     --color-bg-header: oklch(0.3311 0 0);
+    --color-font-header: whitesmoke;
 }
 
 .is-flex, section {
@@ -33,6 +34,7 @@ header {
     min-height: 100vh;
     width: 100vw;
     background-color: var(--color-bg-header);
+    color: var(--color-font-header);
 }
 
 h1 {
