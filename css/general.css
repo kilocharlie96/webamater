@@ -2,9 +2,9 @@
 
 /* arrow animation values */
 @keyframes arrowMovement {
-    0%   { top: 40%; }
-    50%  { top: 45%; }
-    100% { top: 40%; }
+    0%   { top: 50%; }
+    50%  { top: 60%; }
+    100% { top: 50%; }
     }
 
 /* variables */
@@ -27,6 +27,11 @@ body {
     background-color: var(--color-bg-body);
 
     font-family: 'Oswald', sans-serif;
+}
+
+.arrow-container {
+    display: flex;
+    flex: 1;
 }
 
 .arrow {

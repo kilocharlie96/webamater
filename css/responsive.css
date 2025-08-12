@@ -1,42 +1,6 @@
-/* mobile wider */
-@media (min-width: 600px) and (max-width: 768) {
-  body{
-    padding: 0 7vw;
+/* landscape on smartphones */
+@media (max-height: 619px) {
+  h1 {
+    padding-top: 0.5vw;
   }
 }
-
-/* tablet */
-@media (min-width: 769px) and (max-width: 1023px) {
-  body{
-      padding: 0 20vw;
-  }
-
-  p.citat{
-    padding: 0rem;
-  }
-}
-
-  .post-section {
-    display: grid;
-    place-items: center;
-  }
-
-  .post-section p {
-    width: 60%;
-  }
-
-  /* desktop */
-@media (min-width: 1024px) {
-  body{
-      padding: 0 15vw;
-  }
-
-  .arrow {
-    max-width: 10%;
-}
-  
-  .section{
-    margin-right: 8rem;
-    margin-left: 8rem;
-  }
-  }
