@@ -8,7 +8,7 @@
 }
 
 /* landscape on smartphones */
-@media (max-height: 619px) and (max-width: 810px) {
+@media (max-height: 619px) {
   h1 {
     padding-top: 0.5vw;
     font-size: clamp(1.5rem, 5vw, 3rem);
