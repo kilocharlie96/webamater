@@ -14,21 +14,27 @@
     --color-font-header: whitesmoke;
 }
 
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+/* body */
+body {
+    min-height: 100vh;
+    
+    background-color: var(--color-bg-body);
+    
+    font-family: 'Oswald', sans-serif;
+}
+
 .is-flex {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-/* body */
-body {
-    min-height: 100vh;
-
-    background-color: var(--color-bg-body);
-
-    font-family: 'Oswald', sans-serif;
-}
-
+/* arrow */
 .arrow-container {
     display: flex;
     flex: 1;
@@ -37,7 +43,7 @@ body {
 .arrow {
     position: relative;
     animation: arrowMovement 0.9s ease-in-out infinite;
-    height: 10vh;
+    height: 9vh;
 }
 
 a {

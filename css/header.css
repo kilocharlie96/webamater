@@ -10,7 +10,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: clamp(5rem, 4vw, 20rem);
+    font-size: clamp(4rem, 4vw, 20rem);
     font-weight: bold;
     padding-top: clamp(1rem, 10vw, 20rem);
 }

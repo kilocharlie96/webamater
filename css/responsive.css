@@ -1,13 +1,16 @@
-/* landscape on smartphones */
-@media (max-height: 619px) {
-  h1 {
-    padding-top: 0.5vw;
-  }
-}
-
+/* mobile version */
 @media (max-width: 810px) {
   h1 {
     font-size: clamp(3.5rem, 15vw, 5rem);
-    padding: 25vw;
+    padding-right: 20vw;
+    padding-left: 20vw;
+  }
+}
+
+/* landscape on smartphones */
+@media (max-height: 619px) and (max-width: 810px) {
+  h1 {
+    padding-top: 0.5vw;
+    font-size: clamp(1.5rem, 5vw, 3rem);
   }
 }
