@@ -4,3 +4,10 @@
     padding-top: 0.5vw;
   }
 }
+
+@media (max-width: 810px) {
+  h1 {
+    font-size: clamp(3.5rem, 15vw, 5rem);
+    padding: 25vw;
+  }
+}
