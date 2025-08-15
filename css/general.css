@@ -28,6 +28,10 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+h1, h2, h3 {
+    text-align: center;
+}
+
 .is-flex {
     display: flex;
     align-items: center;
@@ -45,8 +49,3 @@ body {
     animation: arrowMovement 0.9s ease-in-out infinite;
     height: 9vh;
 }
-
-a {
-    margin: 2vw;
-}
-
