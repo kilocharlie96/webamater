@@ -11,7 +11,8 @@
 :root {
     --color-bg-body: oklch(0.9672 0 129.63);
     --color-bg-header: oklch(0.3311 0 0);
-    --color-font-header: whitesmoke;
+    --color-font-header: oklch(97.015% 0.00011 271.152);
+    --color-bg-warning: oklch(0.8914 0 0);
 }
 
 html {

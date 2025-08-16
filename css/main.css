@@ -1,5 +1,6 @@
 main {
     max-width: 1000px;
+    box-shadow: 0 0 15px 5px rgba(0,0,0,0.4);
 }
 
 .welcome {
@@ -7,12 +8,15 @@ main {
 }
 
 section h3 {
-    font-size: clamp(2rem, 2vw, 4.5rem);
+    font-size: clamp(2rem, 3vw, 4.5rem);
+}
+
+.warning {
+    background: var(--color-bg-warning);
 }
 
 .tech-stack {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
-
 }
