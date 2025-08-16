@@ -31,9 +31,11 @@ body {
 
 #app {
     box-shadow: 0 0 15px 5px rgba(0,0,0,0.4);
-    max-width: 1000px;
+    max-width: 1300px;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 1rem auto;
+    background: white;
+    border-radius: 0.3vw;
 }
 
 h1, h2, h3 {
@@ -56,4 +58,8 @@ h1, h2, h3 {
     position: relative;
     animation: arrowMovement 0.9s ease-in-out infinite;
     height: 9vh;
+}
+
+ul {
+    list-style: none;
 }
