@@ -1,0 +1,18 @@
+/* min-width: 320px */
+
+/* arrow animation values */
+@keyframes arrowMovement {
+    0%   { top: 50%; }
+    50%  { top: 60%; }
+    100% { top: 50%; }
+    }
+
+/* variables */
+:root {
+    --color-font-body: oklch(0.3329 0 0);
+    --color-bg-body: oklch(0.9672 0 129.63);
+    --color-bg-header: oklch(0.3311 0 0);
+    --color-font-header: oklch(97.015% 0.00011 271.152);
+    --color-bg-warning: oklch(0.8914 0 0);
+
+}

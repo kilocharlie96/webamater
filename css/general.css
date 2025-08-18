@@ -1,20 +1,3 @@
-/* min-width: 320px */
-
-/* arrow animation values */
-@keyframes arrowMovement {
-    0%   { top: 50%; }
-    50%  { top: 60%; }
-    100% { top: 50%; }
-    }
-
-/* variables */
-:root {
-    --color-bg-body: oklch(0.9672 0 129.63);
-    --color-bg-header: oklch(0.3311 0 0);
-    --color-font-header: oklch(97.015% 0.00011 271.152);
-    --color-bg-warning: oklch(0.8914 0 0);
-}
-
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
@@ -23,10 +6,12 @@ html {
 /* body */
 body {
     min-height: 100vh;
-    
     background-color: var(--color-bg-body);
     
+    color: var(--color-font-body);
     font-family: 'Oswald', sans-serif;
+
+    text-align: center;
 }
 
 #app {
@@ -38,15 +23,11 @@ body {
     border-radius: 0.3vw;
 }
 
-h1, h2, h3 {
-    text-align: center;
-}
-
-.is-flex {
+/* .is-flex {
     display: flex;
     align-items: center;
     flex-direction: column;
-}
+} */
 
 /* arrow */
 .arrow-container {
@@ -58,6 +39,10 @@ h1, h2, h3 {
     position: relative;
     animation: arrowMovement 0.9s ease-in-out infinite;
     height: 9vh;
+}
+
+p {
+    margin: 0 auto;
 }
 
 ul {

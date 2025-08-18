@@ -13,6 +13,7 @@ section h3 {
 /* qutote */
 p.quote{
     position: relative;
+    width: clamp(0.5rem, 50vw, 75ch);
 }
 
 /* quotation mark */
