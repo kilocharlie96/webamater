@@ -32,11 +32,15 @@
   }
 
   .arrow {
-  max-width: 10%;
+  max-width: 5%;
 }
-  
-  .section{
-    margin-right: 8rem;
-    margin-left: 8rem;
+
+  .link-img {
+    width: 50%;
   }
+
+  .tech-stack {
+    padding: 5rem;
+    display: flex;
   }
+}
