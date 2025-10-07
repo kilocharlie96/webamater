@@ -10,6 +10,10 @@ section h3 {
     background: var(--color-bg-warning);
 }
 
+.warning p {
+    margin: 1vh auto;
+}
+
 /* qutote */
 p.quote{
     position: relative;

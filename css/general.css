@@ -23,11 +23,11 @@ body {
     border-radius: 0.3vw;
 }
 
-/* .is-flex {
+.is-flex {
     display: flex;
     align-items: center;
     flex-direction: column;
-} */
+}
 
 /* arrow */
 .arrow-container {
@@ -42,7 +42,7 @@ body {
 }
 
 p {
-    margin: 0 auto;
+    margin: 5vh auto;
 }
 
 ul {
