@@ -7,7 +7,7 @@
 
 body {
     min-height: 100vh;
-    background-color: oklch(96.715% 0.00011 271.152);
+    background-color: var(--var-bg-body);
     font-family: 'Oswald', sans-serif;
 }
 
@@ -30,9 +30,13 @@ div.arrow-box {
     width: 30%;
 }
 
+p.warning {
+    background: var(--var-container-bg);
+}
+
 /* overrided Bulma button */
 button.button {
-    color: oklch(89.143% 0.0001 271.152);
+    color: var(--var-body-bg);
     padding: 0.7rem;
     font-size: 0.7rem;
     font-weight: 700;
@@ -43,7 +47,7 @@ button.button {
 
 button.button:hover, button.button:active{
     box-shadow: 0.025rem 0.025rem 0.25rem black;
-    color: oklch(97.015% 0.00011 271.152);
+    color: var(--var-button-text-hover);
 }
 
 strong small.is-small{
@@ -69,17 +73,17 @@ p.quote:before{
 
 /* links */
 a{
-    color: oklch(63.145% 0.08758 54.583);
+    color: var(--var-link);
 }
 
 a:active, a:hover{
-    color: oklch(79.876% 0.09821 64.123);
+    color: var(--var-link-hover);
 }
 
 .img-container {
     margin-top: 5.5rem;
     padding: 1rem;
-    background: oklch(95.311% 0.00009 271.152);
+    background: var(--var-container-bg);
 }
 
 .tech-stack{
@@ -98,7 +102,7 @@ a {
 }
 
 a.box:hover, a.abox:active {
-    box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2), 0 0 0 2px #d0d0d0;
+    box-shadow: inset 0 1px 2px oklch(14.479% 0.00002 271.152 / 0.2), 0 0 0 2px oklch(85.761% 0.0001 271.152);
 }
 
 /* in case of odd number of elements, last child will be centered */
@@ -115,7 +119,7 @@ svg.email{
 }
 
 a:hover > svg.email path, a:active > svg.email path{
-    stroke: oklch(79.876% 0.09821 64.123);
+    stroke: var(--var-link-hover);
   }
 
   /* pre-footer */
@@ -138,22 +142,15 @@ p.thank-you{
 }
 
 .github-icon:hover path, .github-icon:active path{
-    fill: #858585
+    fill: oklch(40% 0.00005 271.152);
 }
 
 p.cookies{
     font-size: 0.65rem;
-    background-image: linear-gradient(oklch(98.511% 0.00011 271.152), oklch(77.311% 0.00009 271.152));
-    text-shadow: 0px 0px 10px oklch(77.311% 0.00009 271.152);
+    background-image: linear-gradient(var(--var-cookies-bg-gradient));
+    text-shadow: 0px 0px 10px var(--var-bg-body);
 }
-
-/* copyright */
-
-/* em.copyright {
-    font-size: 1.15rem;
-} */
 
 span.years {
     display: block;
-    /* font-size: 0.9rem; */
 }
