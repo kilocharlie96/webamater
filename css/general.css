@@ -93,7 +93,7 @@ a:active, a:hover{
 
 .img-container {
     margin-top: 5.5rem;
-    padding: 1rem;
+    padding: clamp(0.1rem, 10vw, 5rem);
     background: var(--var-container-bg);
 }
 
@@ -130,7 +130,7 @@ a.box:hover, a.abox:active {
     width: 90%;
     padding: 2rem;
 
-    background: var(--var-container-bg);
+    background: var(--var-bg-body);
     border-radius: 0.5rem;
     box-shadow: 0.2rem 0.2rem 1rem var(--var-shadow);
 }

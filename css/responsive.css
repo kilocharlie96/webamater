@@ -41,10 +41,19 @@
 
   .post-section-paragraph {
     padding: 3rem;
-    max-width: 50%;
+    max-width: 50rem;
+
   }
 
   .post-section-strong {
     font-size: clamp(1rem, 50%, 2rem);
+  }
+
+  .thank-you {
+    max-width: 80ch;
+  }
+
+  .pre-footer {
+    align-items: center;
   }
 }
