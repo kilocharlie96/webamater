@@ -43,4 +43,8 @@
     padding: 5rem;
     display: flex;
   }
+
+  .post-section-strong {
+    font-size: clamp(1rem, 50%, 2rem);
+  }
 }
