@@ -25,11 +25,14 @@ $(document).ready(function() {
 
   // Animate the header elements (fade-in effect)
   function animateHeader() {
-    var h1 = $('header h1');
-    var h4 = $('header h4');
+    var h1 = $('header h1'),
+        h2 = $('header h2'),
+        arrow = $('header .arrow');
+
     if (h1.length && h4.length) {
       h1.hide().fadeIn(1500);
-      h4.hide().fadeIn(3500);
+      h2.hide().fadeIn(3500);
+      arrow.hide().fadeIn(1500);
     }
   }
 });
