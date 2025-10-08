@@ -29,7 +29,7 @@ $(document).ready(function() {
         h2 = $('header h2'),
         arrow = $('header .arrow');
 
-    if (h1.length && h4.length) {
+    if (h1.length && h2.length) {
       h1.hide().fadeIn(1500);
       h2.hide().fadeIn(3500);
       arrow.hide().fadeIn(1500);
