@@ -7,14 +7,15 @@
 
 body {
     min-height: 100vh;
-    background-color: var(--var-bg-body);
+    background-color: var(--var-body-bg);
     font-family: 'Oswald', sans-serif;
 }
 
 /* header */
 header {
-    height: 100vh;
-}
+        height: 100vh;
+        background: var(--var-header-bg);
+    }
 
 header h1.title{
     line-height: 4rem;
@@ -103,8 +104,6 @@ a:active, a:hover{
     place-items: center;
     grid-template-columns: 1fr 1fr;
     gap: 0.3rem;
-
-
 }
 
 a {
@@ -120,6 +119,20 @@ a.box:hover, a.abox:active {
     justify-self: center;
     grid-column: span 2;
     width: 50%;
+}
+
+.post-section {
+    display: flex;
+    justify-content: center;
+}
+
+.post-section-paragraph {
+    width: 90%;
+    padding: 2rem;
+
+    background: var(--var-container-bg);
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 1rem var(--var-shadow);
 }
 
 /* redirection to e-mail */

@@ -16,15 +16,6 @@
   }
 }
 
-  .post-section {
-    display: grid;
-    place-items: center;
-  }
-
-  .post-section p {
-    width: 60%;
-  }
-
   /* desktop */
 @media (min-width: 1024px) {
   body {
@@ -44,8 +35,13 @@
   }
 
   .tech-stack {
-    padding: 5rem;
     display: flex;
+    padding: clamp(0.1rem, 1vw, 2.5rem);
+  }
+
+  .post-section-paragraph {
+    padding: 3rem;
+    max-width: 50%;
   }
 
   .post-section-strong {

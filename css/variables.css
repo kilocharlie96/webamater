@@ -1,8 +1,10 @@
 :root {
+    --var-header-bg: oklch(33.289% 0.00004 271.152);
     --var-body-bg: oklch(96.715% 0.00011 271.152);
-    --var-container-bg: oklch(95.311% 0.00009 271.152);
+    --var-container-bg: oklch(94.311% 0.00009 271.152);
     --var-button-text-hover: oklch(89.143% 0.0001 271.152);
     --var-link: oklch(63.145% 0.08758 54.583);
     --var-link-hover: oklch(79.876% 0.09821 64.123);
+    --var-shadow: oklch(73.289% 0.00004 271.152);
     --var-cookies-bg-gradient: oklch(98.511% 0.00011 271.152), oklch(77.311% 0.00009 271.152);
 }
