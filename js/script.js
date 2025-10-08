@@ -1,4 +1,4 @@
-$(document).ready(function() {
+jQuery(function() {
   var pageWidth = $('body').width(),
       h1 = $('header h1'),
       h4 = $('header h4'),
@@ -16,4 +16,4 @@ $(document).ready(function() {
         opacity: 0
     }, 500).fadeOut();
   });
-});
+ })
