@@ -30,6 +30,12 @@ div.arrow-box {
     width: 30%;
 }
 
+.welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 p.warning {
     background: var(--var-container-bg);
 }
@@ -53,6 +59,10 @@ button.button:hover, button.button:active{
 strong small.is-small{
     font-weight: normal;
     font-size: 0.9rem;
+}
+
+.quote-box {
+    max-width: 50rem;
 }
 
 p.quote{

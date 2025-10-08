@@ -27,13 +27,17 @@
 
   /* desktop */
 @media (min-width: 1024px) {
-  body{
+  body {
       padding: 0 15vw;
   }
 
   .arrow {
   max-width: 5%;
-}
+  }
+
+  .warning {
+    width: clamp(30rem, 100%, 45rem);
+  }
 
   .link-img {
     width: 50%;
