@@ -1,29 +1,28 @@
 // Run when the DOM is fully loaded
 $(document).ready(function() {
-  var pageWidth = $('body').width(),
-      agreeButton = $('button.button'),
-      warningBanner = $('.warning');
+  var pageWidth = $('body').width();
 
-  // Trigger animation for elements already in the DOM
-  animateHeader();
+// Use delegated event handler so it works even after HTMX swaps
+  $(document).on("click", "button.button", function() {
+    var warningBanner = $('.warning');
 
-  // Hide the warning banner when the agree button is clicked
-  agreeButton.on("click", function() {
     warningBanner.animate({
       left: pageWidth / 2,
       opacity: 0
     }, 500).fadeOut();
   });
 
-  // Listen for HTMX content swaps
-  // This fires after HTMX inserts new HTML into the DOM
+// Trigger header animation on initial load
+  animateHeader();
+
+// Re-run header animation after HTMX replaces the header
   document.body.addEventListener('htmx:afterSwap', function(event) {
     if (event.target.tagName.toLowerCase() === 'header') {
       animateHeader();
     }
   });
 
-  // Animate the header elements (fade-in effect)
+// Function to animate header elements (simple fade-in effect)
   function animateHeader() {
     var h1 = $('header h1'),
         h2 = $('header h2'),
