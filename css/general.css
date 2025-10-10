@@ -29,6 +29,7 @@ div.arrow-box {
 
 .arrow {
     width: 30%;
+    max-width: 5rem;
 }
 
 .welcome {
