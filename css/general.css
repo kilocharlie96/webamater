@@ -18,39 +18,18 @@ header {
         background: var(--var-header-bg);
     }
 
-/* header h1.title{
-    line-height: 4rem;
-} */
-
 header h1 {
-    font-size: clamp(4rem, 4vw, 20rem);
+    font-size: clamp(3rem, 3.5vw, 8rem);  
     font-weight: bold;
     padding-top: clamp(1rem, 10vw, 20rem);
+    padding-right: clamp(0rem, 5vw, 5rem);
+    padding-left: clamp(0rem, 5vw, 5rem);
 }
 
 header h2 {
-    font-size: clamp(0.7rem, 1vw, 3.5rem);
+    font-size: clamp(0.8rem, 1vw, 3.5rem);
     font-weight: normal;
     padding: 0 20vw;
-}
-
-
-
-/* mobile version */
-@media (max-width: 810px) {
-  h1 {
-    font-size: clamp(3.5rem, 15vw, 5rem);
-    padding-right: 20vw;
-    padding-left: 20vw;
-  }
-}
-
-/* landscape on mobile */
-@media (max-height: 619px) {
-  h1 {
-    padding-top: 0.5vw;
-    font-size: clamp(1.5rem, 5vw, 3rem);
-  }
 }
 
 /* arrow */
