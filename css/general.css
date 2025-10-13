@@ -118,7 +118,11 @@ p.quote:before{
     width: 50%;
 }
 
-/* links */
+/* override bulma.css */
+a.box:hover, a.box:active {
+    box-shadow: none;
+}
+
 a{
     color: var(--var-link);
 }
@@ -161,7 +165,6 @@ a:hover > svg.email path, a:active > svg.email path{
     stroke: var(--var-link-hover);
   }
 
-  /* pre-footer */
 div.pre-footer{
     gap: 4rem;
   }
