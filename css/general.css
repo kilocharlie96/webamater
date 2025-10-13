@@ -94,14 +94,6 @@ p.quote:before{
     left: -0.6rem;
 }
 
-/* links */
-a{
-    color: var(--var-link);
-}
-
-a:active, a:hover{
-    color: var(--var-link-hover);
-}
 
 .img-container {
     margin-top: 5.5rem;
@@ -111,26 +103,38 @@ a:active, a:hover{
 
 .tech-stack{
     width: 100%;
-
+    
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 1fr;
     gap: 0.3rem;
 }
 
-a {
-    max-width: 550px;
-}
-
-a.box:hover, a.abox:active {
-    box-shadow: inset 0 1px 2px oklch(14.479% 0.00002 271.152 / 0.2), 0 0 0 2px oklch(85.761% 0.0001 271.152);
-}
 
 /* in case of odd number of elements, last child will be centered */
 .tech-stack a:last-child:nth-child(odd){
     justify-self: center;
     grid-column: span 2;
     width: 50%;
+}
+
+/* links */
+a{
+    color: var(--var-link);
+}
+
+a:hover, a:active {
+    color: var(--var-link-hover);
+}
+
+.link-img {
+    max-width: 550px;
+    transition: transform 0.5s ease;
+    transform-style: preserve-3d;
+}
+
+.link-img:hover, .link-img:active{
+    transform: rotateY(360deg);
 }
 
 .post-section {
