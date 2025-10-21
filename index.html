@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Kristián Černák - WebAmatér">
+    <meta property="og:description" content="Moja osobná stránka, ktorá nahrádza tradičný motivačný list.">
     <title>💻 Kristián Černák - WebAmatér</title>
 
-<script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js" 
-        integrity="sha384-ZBXiYtYQ6hJ2Y0ZNoYuI+Nq5MqWBr+chMrS/RkXpNzQCApHEhOt2aY8EJgqwHLkJ" 
-        crossorigin="anonymous">
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js" 
+            integrity="sha384-ZBXiYtYQ6hJ2Y0ZNoYuI+Nq5MqWBr+chMrS/RkXpNzQCApHEhOt2aY8EJgqwHLkJ" 
+            crossorigin="anonymous">
+    </script>
+
 
     <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="stylesheet" href="css/bulma.css">
@@ -30,12 +33,13 @@
 
     <main>
         <div class="welcome box has-text-centered container" hx-get="components/welcome.html" hx-trigger="load"></div>
-        
+
+        <section class="story" hx-get="components/story.html" hx-trigger="load"></section>
+
         <section class="img-container" hx-get="components/used-tech-stack.html" hx-trigger="load"></section>
 
         <section class="img-container" hx-get="components/other-tech-stack.html" hx-trigger="load"></section>
 
-        <section class="post-section" hx-get="components/post-section.html" hx-trigger="load"></section>
     
         <div class="pre-footer box is-flex is-flex-direction-column has-text-centered has-background-white-ter has-text-dark mt-5" hx-get="components/pre-footer.html" hx-trigger="load"></div>
     </main>

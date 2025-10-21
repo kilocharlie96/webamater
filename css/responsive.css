@@ -13,6 +13,11 @@
       padding: 0 20vw;
   }
 
+  .quote-box {
+    padding: 3rem 6rem;
+    max-width: 25rem;
+  }
+
   p.citat{
     padding: 0rem;
   }
@@ -32,6 +37,15 @@
     width: clamp(30rem, 100%, 45rem);
   }
 
+  .quote-box {
+    padding: 3rem 6rem;
+    max-width: 25rem;
+  }
+
+  .why-me-strong {
+    font-size: clamp(1rem, 50%, 2rem);
+  }
+
   .link-img {
     width: 50%;
   }
@@ -41,15 +55,12 @@
     padding: clamp(0.1rem, 1vw, 2.5rem);
   }
 
-  .post-section-paragraph {
+  .why-me-paragraph {
     padding: 3rem;
     max-width: 50rem;
 
   }
 
-  .post-section-strong {
-    font-size: clamp(1rem, 50%, 2rem);
-  }
 
   .thank-you {
     max-width: 80ch;

@@ -74,8 +74,19 @@ strong small.is-small{
     font-size: 0.9rem;
 }
 
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 0 1rem;
+}
+
 .quote-box {
-    max-width: 50rem;
+    padding: 3rem 4rem;
+    max-width: 25rem;
+    background: var(--var-bg-body);
+    box-shadow: 0.2rem 0.2rem 1rem var(--var-shadow);
 }
 
 p.quote{
@@ -94,6 +105,19 @@ p.quote:before{
     left: -0.6rem;
 }
 
+.why-me {
+    display: flex;
+    justify-content: center;
+}
+
+.why-me-paragraph {
+    width: 90%;
+    padding: 2rem;
+
+    background: var(--var-bg-body);
+    border-radius: 0.5rem;
+    box-shadow: 0.2rem 0.2rem 1rem var(--var-shadow);
+}
 
 .img-container {
     margin-top: 5.5rem;
@@ -141,19 +165,6 @@ a:hover, a:active {
     transform: rotateY(360deg);
 }
 
-.post-section {
-    display: flex;
-    justify-content: center;
-}
-
-.post-section-paragraph {
-    width: 90%;
-    padding: 2rem;
-
-    background: var(--var-bg-body);
-    border-radius: 0.5rem;
-    box-shadow: 0.2rem 0.2rem 1rem var(--var-shadow);
-}
 
 /* redirection to e-mail */
 svg.email{
