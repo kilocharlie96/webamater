@@ -60,12 +60,12 @@ button.button {
     font-size: 0.7rem;
     font-weight: 700;
     border-radius: 1rem;
-    box-shadow: 0.025rem 0.025rem 0.1rem gray;
+    box-shadow: 0.025rem 0.025rem 0.1rem oklch(59.987% 0.00007 271.152);
     border: none;
 }
 
 button.button:hover, button.button:active{
-    box-shadow: 0.025rem 0.025rem 0.25rem black;
+    box-shadow: 0.025rem 0.025rem 0.25rem oklch(0% 0 0);
     color: var(--var-button-text-hover);
 }
 
@@ -166,6 +166,16 @@ a:hover, a:active {
     transform: rotateY(360deg);
 }
 
+.about-tech-stack {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 2rem;
+}
+
+.about-tech-stack article p {
+    margin: 1rem 0;
+}
 
 /* redirection to e-mail */
 svg.email{
