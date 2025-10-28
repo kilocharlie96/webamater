@@ -112,6 +112,7 @@ p.quote:before{
 
 .why-me-paragraph {
     width: 90%;
+    margin: 2rem 0;
     padding: 2rem;
 
     background: var(--var-bg-body);
