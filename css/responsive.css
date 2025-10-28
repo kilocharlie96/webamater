@@ -11,40 +11,49 @@
 @media (min-width: 769px) and (max-width: 1023px) {
   body{
       padding: 0 20vw;
-  }
-
-  .quote-box {
-    padding: 3rem 6rem;
+    }
+    
+    .quote-box {
+      padding: 3rem 6rem;
     max-width: 25rem;
   }
-
+  
   p.citat{
     padding: 0rem;
   }
 }
 
-  /* desktop */
+/* desktop */
 @media (min-width: 1024px) {
   body {
-      padding: 0 15vw;
+    padding: 0 15vw;
   }
-
+  
   .arrow {
-  max-width: 5%;
+    max-width: 5%;
   }
-
+  
   .warning {
     width: clamp(30rem, 100%, 45rem);
   }
-
-  .quote-box {
-    padding: 3rem 6rem;
-    max-width: 25rem;
+  
+  .why-me-paragraph {
+    padding: 3rem;
+    margin: 
+    3rem 0;
+    max-width: 50rem;
+    
   }
 
   .why-me-strong {
     font-size: clamp(1rem, 50%, 2rem);
   }
+  
+  .quote-box {
+    padding: 3rem 6rem;
+    max-width: 25rem;
+  }
+
 
   .link-img {
     width: 50%;
@@ -53,14 +62,6 @@
   .tech-stack {
     display: flex;
     padding: clamp(0.1rem, 1vw, 2.5rem);
-  }
-
-  .why-me-paragraph {
-    padding: 3rem;
-    margin: 
-    3rem 0;
-    max-width: 50rem;
-
   }
 
   .thank-you {

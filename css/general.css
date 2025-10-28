@@ -177,6 +177,10 @@ a:hover, a:active {
     margin: 1rem 0;
 }
 
+.about-tech-stack article {
+    max-width: 40rem;
+}
+
 /* redirection to e-mail */
 svg.email{
     position: relative;
